@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.sln.ide
+
+# Other files to ignore
+*.log
+*.pdb
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.jfm.user
+*.jfm.sln

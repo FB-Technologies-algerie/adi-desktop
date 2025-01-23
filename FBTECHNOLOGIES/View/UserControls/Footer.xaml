@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="FBTECHNOLOGIES.View.UserControls.Footer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FBTECHNOLOGIES.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Grid.Row="3" Grid.Column="2" Margin="0 0 30 0 ">
+        <StackPanel HorizontalAlignment="Right">
+            <TextBlock Text="License Expiration Date" Foreground="#ffffff" Opacity=".27" />
+            <TextBlock HorizontalAlignment="Center" Text="01/01/2026" Foreground="#ffffff" Opacity=".27" />
+        </StackPanel>
+    </Grid>
+</UserControl>
