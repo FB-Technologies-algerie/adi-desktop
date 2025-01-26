@@ -8,93 +8,93 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="HomePageDashboard">
     <Page.Resources>
-     <Style TargetType="{x:Type CheckBox}"
+        <Style TargetType="{x:Type CheckBox}"
 	x:Key="SwitchCheckBoxStyle">
-         <Setter Property="Template">
-             <Setter.Value>
-                 <ControlTemplate TargetType="{x:Type CheckBox}">
-                     <Grid>
-                         <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="Auto" />
-                             <ColumnDefinition Width="Auto" />
-                         </Grid.ColumnDefinitions>
-                         <Grid Grid.Column="0"
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0"
 			 Width="34"
 			Height="21">
 
-                             
-    
-    
-
-                             <Rectangle Fill="Transparent" />
 
 
-                             
-    
-    
 
-                             <Border CornerRadius="10" 
+
+                                <Rectangle Fill="Transparent" />
+
+
+
+
+
+
+                                <Border CornerRadius="10" 
 				 BorderBrush="#D1D1D6"
 					 Background="#D1D1D6"
 				 BorderThickness="1"
 				 x:Name="ToggleBorder">
 
-                                 
-    
-    
 
-                                 <Ellipse Fill="White" 
+
+
+
+                                    <Ellipse Fill="White" 
 					  Height="10" 
 					  Width="10" 
 					  HorizontalAlignment="Left"
 					  Margin="4,0"
 					  VerticalAlignment="Center"
 					  x:Name="ToggleEllipse"/>
-                             </Border>
-                         </Grid>
-                         <ContentPresenter Grid.Column="1"
+                                </Border>
+                            </Grid>
+                            <ContentPresenter Grid.Column="1"
 					   Margin="4,0,0,0"
 					   VerticalAlignment="Center"
 					   HorizontalAlignment="Left"/>
-                     </Grid>
+                        </Grid>
 
-                     <ControlTemplate.Triggers>
+                        <ControlTemplate.Triggers>
 
-                         
-    
-    
 
-                         <Trigger Property="IsChecked" Value="True">
-                             <Setter TargetName="ToggleEllipse"
+
+
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="ToggleEllipse"
 				 Property="HorizontalAlignment"
 				 Value="Right" />
-                             <Setter TargetName="ToggleBorder"
+                                <Setter TargetName="ToggleBorder"
 				 Property="BorderBrush"
 				 Value="#0B97D4" />
-                             <Setter TargetName="ToggleBorder"
+                                <Setter TargetName="ToggleBorder"
 				 Property="Background"
 				 Value="#0B97D4" />
-                             <Setter TargetName="ToggleEllipse"
+                                <Setter TargetName="ToggleEllipse"
 				 Property="Fill"
 				 Value="White" />
 
-                         </Trigger>
-                         <Trigger Property="IsFocused" Value="True">
-                             <Setter TargetName="ToggleBorder"
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="ToggleBorder"
 				 Property="BorderThickness"
 				 Value="1.5" />
-                             <Setter TargetName="ToggleBorder"
+                                <Setter TargetName="ToggleBorder"
 				 Property="BorderBrush"
 				 Value="Transparent "/>
-                         </Trigger>
-                     </ControlTemplate.Triggers>
-                 </ControlTemplate>
-             </Setter.Value>
-         </Setter>
-         <Setter Property="HorizontalAlignment" Value="Left"/>
-         <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
-     </Style>
- </Page.Resources>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        </Style>
+    </Page.Resources>
 
     <Grid Grid.Row="1" Grid.Column="1">
         <Grid.RowDefinitions>
@@ -484,69 +484,69 @@ Grid.Column="1" Grid.RowSpan="5" Stretch="UniformToFill" Margin="0 18  0 55"  />
                     <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
                     <!-- Left Icon -->
                     <Image Source="images/VectorActive.png"
-				   Width="15"
-				   Height="15"
-				   VerticalAlignment="Center"
-				   HorizontalAlignment="Center" />
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
 
                     <!-- Text -->
                     <TextBlock Grid.Column="1"
-					   Text="Immo OFF"
-					   Foreground="White"
-					   FontWeight="Bold"
-					   VerticalAlignment="Center"
-								   FontSize="14"
-					   HorizontalAlignment="Left"
-					   Margin="10,0,0,0" />
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
 
                     <!-- Toggle Button -->
                     <CheckBox Grid.Column="2"
-							 VerticalAlignment="Center"
-							HorizontalAlignment="Right" 
-							Style="{StaticResource SwitchCheckBoxStyle}" />
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
                 </Grid>
             </Border>
         </Grid>
-        <!--<Grid Grid.Row="2" Grid.Column="0" Margin="0,10,30,10" HorizontalAlignment="Right" Width="200">-->
-        <!-- Background Div -->
-        <Border  >
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width=".2*" />
-                    <!-- For the Image -->
-                    <ColumnDefinition Width="*" />
-                    <!-- For the Text -->
-                    <ColumnDefinition Width=".3*" />
-                    <!-- For the Toggle Button -->
-                </Grid.ColumnDefinitions>
-                <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
-                <!-- Left Icon -->
-                <Image Source="images/VectorActive.png"
-	   Width="15"
-	   Height="15"
-	   VerticalAlignment="Center"
-	   HorizontalAlignment="Center" />
+        <Grid Grid.Row="2" Grid.Column="0" Margin="0,10,30,10" HorizontalAlignment="Right" Width="200">
+            <!-- Background Div -->
+            <Border  >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".2*" />
+                        <!-- For the Image -->
+                        <ColumnDefinition Width="*" />
+                        <!-- For the Text -->
+                        <ColumnDefinition Width=".3*" />
+                        <!-- For the Toggle Button -->
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                    <!-- Left Icon -->
+                    <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
 
-                <!-- Text -->
-                <TextBlock Grid.Column="1"
-		   Text="Immo OFF"
-		   Foreground="White"
-		   FontWeight="Bold"
-		   VerticalAlignment="Center"
-					   FontSize="14"
-		   HorizontalAlignment="Left"
-		   Margin="10,0,0,0" />
+                    <!-- Text -->
+                    <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
 
-                <!-- Toggle Button -->
-                <CheckBox Grid.Column="2"
-				 VerticalAlignment="Center"
-				HorizontalAlignment="Right" 
-				Style="{StaticResource SwitchCheckBoxStyle}" />
-            </Grid>
-        </Border>
-    </Grid>
+                    <!-- Toggle Button -->
+                    <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                </Grid>
+            </Border>
+        </Grid>
     <Grid Grid.Row="3" Grid.Column="0" Margin="0,10,50,10" HorizontalAlignment="Right" Width="200">
-        
+        <!-- Background Div -->
         <Border  >
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -698,4 +698,8 @@ HorizontalAlignment="Center" />
         </Border>
     </Grid>
 
+
+  
+
+    </Grid>
 </Page>

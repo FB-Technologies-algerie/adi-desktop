@@ -107,7 +107,608 @@
 
         <!-- Sidebar Section -->
         <!--<userControls:SideBar Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"/>-->
-       
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".25*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".25*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".4*"/>
+                <ColumnDefinition Width=".2*"/>
+                <ColumnDefinition Width=".4* "/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/images/carBg.png"
+				 Grid.RowSpan="8" 
+Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
+
+            <!--Right Grid Items-->
+            <Grid Grid.Row="1" Grid.Column="2" Margin="10,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+				   Width="15"
+				   Height="15"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+					   Text="Immo OFF"
+					   Foreground="White"
+					   FontWeight="Bold"
+					   VerticalAlignment="Center"
+								   FontSize="14"
+					   HorizontalAlignment="Left"
+					   Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+							 VerticalAlignment="Center"
+							HorizontalAlignment="Right" 
+							Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="2" Margin="30,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+	   Width="15"
+	   Height="15"
+	   VerticalAlignment="Center"
+	   HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+		   Text="Immo OFF"
+		   Foreground="White"
+		   FontWeight="Bold"
+		   VerticalAlignment="Center"
+					   FontSize="14"
+		   HorizontalAlignment="Left"
+		   Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+				 VerticalAlignment="Center"
+				HorizontalAlignment="Right" 
+				Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="2" Margin="50,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+	Width="15"
+	Height="15"
+	VerticalAlignment="Center"
+	HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+		Text="Immo OFF"
+		Foreground="White"
+		FontWeight="Bold"
+		VerticalAlignment="Center"
+					FontSize="14"
+		HorizontalAlignment="Left"
+		Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+			  VerticalAlignment="Center"
+			 HorizontalAlignment="Right" 
+			 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="2" Margin="70,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="2" Margin="50,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="2" Margin="30,10,0,10" HorizontalAlignment="Left" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <!--Bottm Btns-->
+
+            <Grid Grid.Row="7" Grid.Column="1">
+                <Image Source="images/SaveShape.png" Margin="0 -14 0 0"
+		   Stretch="Uniform"
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center" />
+                <TextBlock Text="Save"
+						   Margin="0 -14 0 0"
+			   FontSize="30"
+			   FontWeight="Bold"
+			   Foreground="Black"
+			   VerticalAlignment="Center"
+			   HorizontalAlignment="Center" />
+            </Grid>
+            <Grid Grid.Row="7" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70*"/>
+                    <!-- 60% of the width -->
+                    <ColumnDefinition Width="30*"/>
+                    <!-- 40% of the width -->
+                </Grid.ColumnDefinitions>
+                <!-- Right Column (40%) -->
+                <Grid Grid.Column="1"  VerticalAlignment="Center">
+                    <Image Source="images/OriginalFile.png" 
+			   Stretch="Uniform"
+			   Margin="0 0 8 0"
+			   VerticalAlignment="Center" />
+                    <TextBlock Text="Original File"
+				   FontSize="16"
+				   FontWeight="Bold"
+				   Foreground="#606060"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="7" Grid.Column="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*"/>
+                    <!-- 60% of the width -->
+                    <ColumnDefinition Width="70*"/>
+                    <!-- 40% of the width -->
+                </Grid.ColumnDefinitions>
+                <!-- Right Column (40%) -->
+                <Grid Grid.Column="0"  VerticalAlignment="Center">
+                    <Image Source="images/DTCOFF.png" 
+   Stretch="Uniform"
+   Margin="8 0 0 0"
+   VerticalAlignment="Center" />
+                    <TextBlock Text="DTC OFF"
+	   FontSize="16"
+	   FontWeight="Bold"
+	   Foreground="#0E172E"
+	   VerticalAlignment="Center"
+	   HorizontalAlignment="Center" />
+                </Grid>
+            </Grid>
+            <!--Open btn-->
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Image Source="images/OpenBtn.png" Margin="0 0 0 -16"
+Stretch="Uniform"
+HorizontalAlignment="Center"
+VerticalAlignment="Center" />
+                <TextBlock Text="Open"
+				Margin="0 0 0 0"
+	FontSize="30"
+	FontWeight="Bold"
+	Foreground="White"
+	VerticalAlignment="Center"
+	HorizontalAlignment="Center" />
+            </Grid>
+
+            <!--Token-->
+            <Border Grid.Column="1" Grid.Row="1" Background="#38000000" Padding="10" Width="180" 
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="images/TokenImg.png" Width="15" Height="15" 
+                       VerticalAlignment="Center" Margin="0,0,10,0" />
+                    <TextBlock FontWeight="Bold" Text="Token: 1" VerticalAlignment="Center" 
+                           Foreground="White" FontSize="16" />
+                </StackPanel>
+            </Border>
+
+            <!--Stage 1 and stock-->
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="4 0">
+                <TextBlock Text="Stage 1"
+                       FontSize="18"
+                           VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Left" />
+                <UniformGrid Margin="0 3" Name="Stage1ProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />
+                <TextBlock Text="200 ch"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Foreground="White" 
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Margin="4 0">
+                <TextBlock Text="Stock"
+           FontSize="18"
+               VerticalAlignment="Top"
+           FontWeight="Bold"
+           Foreground="White"
+           HorizontalAlignment="Left" />
+                <!--<UniformGrid Margin="0 3" Name="StockProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />-->
+                <TextBlock Text="147 ch"
+        FontSize="18"
+        FontWeight="Bold"
+        Foreground="White" 
+        VerticalAlignment="Bottom"
+        HorizontalAlignment="Center" />
+            </StackPanel>
+            <!--Car image-->
+            <Image Source="/images/car.png"
+Grid.Row="3" HorizontalAlignment="Center"
+Grid.Column="1" Grid.RowSpan="5" Stretch="UniformToFill" Margin="0 18  0 55"  />
+
+
+
+            <!--Left Grid Items-->
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0,10,10,10" HorizontalAlignment="Right" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+				   Width="15"
+				   Height="15"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+					   Text="Immo OFF"
+					   Foreground="White"
+					   FontWeight="Bold"
+					   VerticalAlignment="Center"
+								   FontSize="14"
+					   HorizontalAlignment="Left"
+					   Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+							 VerticalAlignment="Center"
+							HorizontalAlignment="Right" 
+							Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <!--<Grid Grid.Row="2" Grid.Column="0" Margin="0,10,30,10" HorizontalAlignment="Right" Width="200">-->
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+	   Width="15"
+	   Height="15"
+	   VerticalAlignment="Center"
+	   HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+		   Text="Immo OFF"
+		   Foreground="White"
+		   FontWeight="Bold"
+		   VerticalAlignment="Center"
+					   FontSize="14"
+		   HorizontalAlignment="Left"
+		   Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+				 VerticalAlignment="Center"
+				HorizontalAlignment="Right" 
+				Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0" Margin="0,10,50,10" HorizontalAlignment="Right" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+	Width="15"
+	Height="15"
+	VerticalAlignment="Center"
+	HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+		Text="Immo OFF"
+		Foreground="White"
+		FontWeight="Bold"
+		VerticalAlignment="Center"
+					FontSize="14"
+		HorizontalAlignment="Left"
+		Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+			  VerticalAlignment="Center"
+			 HorizontalAlignment="Right" 
+			 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0" Margin="0,10,70,10" HorizontalAlignment="Right" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0" Margin="0,10,50,10" HorizontalAlignment="Right" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0" Margin="0,10,30,10" HorizontalAlignment="Right" Width="200">
+                <!-- Background Div -->
+                <Border  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <!-- For the Image -->
+                            <ColumnDefinition Width="*" />
+                            <!-- For the Text -->
+                            <ColumnDefinition Width=".3*" />
+                            <!-- For the Toggle Button -->
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="#0C0C0C" Opacity="0.17" RadiusX="18" RadiusY="18" Grid.Column="0" Grid.ColumnSpan="3" />
+                        <!-- Left Icon -->
+                        <Image Source="images/VectorActive.png"
+Width="15"
+Height="15"
+VerticalAlignment="Center"
+HorizontalAlignment="Center" />
+
+                        <!-- Text -->
+                        <TextBlock Grid.Column="1"
+	Text="Immo OFF"
+	Foreground="White"
+	FontWeight="Bold"
+	VerticalAlignment="Center"
+				FontSize="14"
+	HorizontalAlignment="Left"
+	Margin="10,0,0,0" />
+
+                        <!-- Toggle Button -->
+                        <CheckBox Grid.Column="2"
+		  VerticalAlignment="Center"
+		 HorizontalAlignment="Right" 
+		 Style="{StaticResource SwitchCheckBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+
 
             
 
