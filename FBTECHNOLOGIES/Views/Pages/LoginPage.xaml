@@ -1,0 +1,66 @@
+﻿<Page x:Class="FBTECHNOLOGIES.Views.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FBTECHNOLOGIES.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+    <Page.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="20" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </Page.Resources>
+    <Grid Background="#070F22">
+        <Image Source="/images/BackgroundImage.png" Opacity="0.5" />
+
+
+        <!-- Login Form Container -->
+        <Border CornerRadius="10" Padding="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <Image Source="/images/BackgroundLogo.png" Width="100" Height="100"  />
+                <TextBlock Text="Leistung Maximieren Mit Otunex" Foreground="White" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 20 0 20"/>
+                <!-- Welcome Text -->
+                <TextBlock Text="Welcome" Foreground="#0A96D3" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 20"/>
+
+                <!-- Username Field -->
+
+                <StackPanel Margin="0 0 0 10">
+                    <TextBlock Text="Username" Foreground="White" Width="200" FontSize="16" />
+                    <TextBox BorderThickness="0" Background="#1A387F" x:Name="UsernameTextBox" Width="200" Height="25" />
+                </StackPanel>
+
+                <!-- Password Field -->
+                <StackPanel Margin="0 0 0 10">
+                    <TextBlock Text="Password" Foreground="White" Width="200" FontSize="16" />
+                    <PasswordBox BorderThickness="0" Background="#1A387F" x:Name="PasswordBox" Width="200" Margin="0 0 0 20" Height="25"/>
+                </StackPanel>
+
+                <!-- Login Button -->
+                <!-- Rounded Login Button -->
+                <Button Background="#0797D3" Click="LoginButton_Click" Foreground="White" Width="100" Height="40" 
+                        HorizontalAlignment="Center" Style="{StaticResource RoundedButtonStyle}">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="/images/loginIcon.png" Width="20" Height="20" Margin="0 5 5 0" />
+                        <TextBlock FontWeight="Bold" Foreground="#05223D" Text="Login" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

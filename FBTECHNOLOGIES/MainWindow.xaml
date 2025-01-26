@@ -26,67 +26,9 @@
             <Setter Property="Foreground" Value="White" />
         </Style>
     </Window.Resources>
-    <Grid Background="#070F22">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <!-- Header -->
-            <RowDefinition Height="*"/>
-            <!-- Main Content -->
-            <RowDefinition Height="50"/>
-        </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=".1*"/>
-            <!-- Sidebar -->
-            <ColumnDefinition Width=".9*"/>
-            <!-- Con tent Area -->
-        </Grid.ColumnDefinitions>
-
-        <!-- Header Section -->
-        <userControls:Header Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center"/>
-
-        <!-- Sidebar Section -->
-        <userControls:SideBar Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-
-        <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,50,0,0">
-    <!-- About Us Title -->
-    <TextBlock Text="Token" 
-               HorizontalAlignment="Center" 
-               Foreground="#ffffff" 
-               FontSize="30" 
-               FontWeight="Bold" />
-
-    <!-- Spacer -->
-    <StackPanel Height="20" /> <!-- This creates a gap -->
-
-    <StackPanel HorizontalAlignment="Left" Margin="20 20" Orientation="Horizontal">
-        <StackPanel>
-            <TextBlock Margin="0 10" FontWeight="Bold" Text="Token number" Foreground="White" Width="200" FontSize="16" />
-            <TextBox BorderThickness="0" Background="#1A387F" x:Name="FirstNameTextBox" Width="200" Height="45" Foreground="White" VerticalContentAlignment="Center" FontSize="14" />
-        </StackPanel>
-                <StackPanel Width="200" />
-                <StackPanel>
-            <TextBlock Text="Buy Token" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" />
-            <Button Margin="0 20" Background="#0C96D3" Foreground="White" Width="200" Height="45"
-                    HorizontalAlignment="Center" Style="{StaticResource RoundedButtonStyle}">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Image Source="/images/Buy.png" Width="20" Height="20" Margin="0 3 8 0" VerticalAlignment="Center" />
-                    <TextBlock FontSize="18" FontWeight="Bold" Foreground="#070F22" Text="Buy token" VerticalAlignment="Center" />
-                </StackPanel>
-            </Button>
-        </StackPanel>
-    </StackPanel>
-</StackPanel>
-
-
-
-
-
-
-        <!-- Footer Section -->
-        <userControls:Footer Grid.Row="3" Grid.Column="2" Margin="0 0 30 0 " />
-        <Image Source="/images/BackgroundImage.png" Opacity="0.5" Panel.ZIndex="-1"
-Grid.RowSpan="3" 
-Grid.ColumnSpan="2"  />
+    
+    <Grid>
+        <Frame x:Name="MainFrame"  />
     </Grid>
 </Window>

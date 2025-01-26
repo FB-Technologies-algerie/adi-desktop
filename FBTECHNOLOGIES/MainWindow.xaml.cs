@@ -17,6 +17,7 @@ namespace FBTECHNOLOGIES
             InitializeComponent();
             //PopulateRectangleProgress(Stage1ProgressGrid, 15, 20); 
             //PopulateRectangleProgress(StockProgressGrid, 8, 20);  
+            MainFrame.Navigate(new Uri("/Views/Pages/LoginPage.xaml", UriKind.Relative));
 
         }
 
