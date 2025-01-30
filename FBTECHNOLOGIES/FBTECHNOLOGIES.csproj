@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\PositionToMarginConverter.cs" />
+    <Compile Include="ImmobilizeOption.cs" />
+    <Compile Include="ViewModels\HomePageDashboardViewModel.cs" />
     <Compile Include="Views\Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>

@@ -24,5 +24,10 @@ namespace FBTECHNOLOGIES.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
