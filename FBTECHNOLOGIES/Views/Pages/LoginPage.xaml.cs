@@ -29,7 +29,7 @@ namespace FBTECHNOLOGIES.Views.Pages
         {
             var mainLayout = new MainLayout();
             NavigationService.Navigate(mainLayout);
-            
+
         }
     }
 }

@@ -100,7 +100,13 @@
             </Button>
         </StackPanel>
 
-        <Frame x:Name="MainContentFrame" Grid.Column="1" Grid.Row="1" Margin="0,50,0,0" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="MainContentFrame" 
+               Grid.Column="1" 
+               Grid.Row="1" 
+               Margin="0,50,0,0" 
+               NavigationUIVisibility="Hidden"
+               UseLayoutRounding="True"
+               RenderOptions.BitmapScalingMode="HighQuality" />
 
 
 

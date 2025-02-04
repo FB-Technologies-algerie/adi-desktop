@@ -244,7 +244,7 @@
     <Resource Include="images\SettingsIcon.png" />
     <Resource Include="images\TicketsIcon.png" />
     <Resource Include="images\UserIconn.png" />
-    <Resource Include="images\vectorActive.png" />
+    <Resource Include="images\VectorActive.png" />
     <Resource Include="images\VectorDisabled.png" />
   </ItemGroup>
   <ItemGroup>

@@ -27,7 +27,7 @@
         </Style>
     </Window.Resources>
 
-    
+
     <Grid>
         <Frame x:Name="MainFrame"  />
     </Grid>

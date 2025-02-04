@@ -104,6 +104,9 @@
     </Page.Resources>
 
     <Grid Grid.Row="1" Grid.Column="1">
+        <Grid.RenderTransform>
+            <TranslateTransform />
+        </Grid.RenderTransform>
         <Grid.RowDefinitions>
             <RowDefinition Height=".25*" />
             <RowDefinition Height=".2*" />
@@ -142,7 +145,7 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
                           RadiusX="18" 
                           RadiusY="18" 
                           Grid.ColumnSpan="3"/>
-                        <Image Source="images/VectorActive.png"
+                        <Image Source="../../images/VectorDisabled.png"
                        Width="15"
                        Height="15"
                        VerticalAlignment="Center"
@@ -306,7 +309,7 @@ Grid.Column="1" Grid.RowSpan="5" Stretch="UniformToFill" Margin="0 18  0 55"  />
                           RadiusX="18" 
                           RadiusY="18" 
                           Grid.ColumnSpan="3"/>
-                        <Image Source="images/VectorActive.png"
+                        <Image Source="images/vectorActive.png"
                        Width="15"
                        Height="15"
                        VerticalAlignment="Center"
