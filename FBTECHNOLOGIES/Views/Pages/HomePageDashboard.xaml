@@ -28,28 +28,12 @@
                             <Grid Grid.Column="0"
 			 Width="34"
 			Height="21">
-
-
-
-
-
                                 <Rectangle Fill="Transparent" />
-
-
-
-
-
-
                                 <Border CornerRadius="10" 
 				 BorderBrush="#D1D1D6"
 					 Background="#D1D1D6"
 				 BorderThickness="1"
 				 x:Name="ToggleBorder">
-
-
-
-
-
                                     <Ellipse Fill="White" 
 					  Height="10" 
 					  Width="10" 
@@ -64,13 +48,7 @@
 					   VerticalAlignment="Center"
 					   HorizontalAlignment="Left"/>
                         </Grid>
-
                         <ControlTemplate.Triggers>
-
-
-
-
-
                             <Trigger Property="IsChecked" Value="True">
                                 <Setter TargetName="ToggleEllipse"
 				 Property="HorizontalAlignment"
@@ -259,7 +237,7 @@ VerticalAlignment="Center" />
                        FontWeight="Bold"
                        Foreground="White"
                        HorizontalAlignment="Left" />
-            <UniformGrid Margin="0 3" Name="Stage1ProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />
+            <UniformGrid Margin="0" Name="Stage1ProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />
             <TextBlock Text="200 ch"
                     FontSize="18"
                     FontWeight="Bold"
@@ -274,7 +252,7 @@ VerticalAlignment="Center" />
            FontWeight="Bold"
            Foreground="White"
            HorizontalAlignment="Left" />
-            <!--<UniformGrid Margin="0 3" Name="StockProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />-->
+            <UniformGrid Margin="0" Name="StockProgressGrid" HorizontalAlignment="Center" Rows="1" Columns="20" />
             <TextBlock Text="147 ch"
         FontSize="18"
         FontWeight="Bold"
@@ -286,9 +264,6 @@ VerticalAlignment="Center" />
         <Image Source="/images/car.png"
 Grid.Row="3" HorizontalAlignment="Center"
 Grid.Column="1" Grid.RowSpan="5" Stretch="UniformToFill" Margin="0 18  0 55"  />
-
-
-
         <!--Left Grid Items-->
         <ListBox ItemsSource="{Binding ImmobilizeOptions}" 
          Grid.Column="2"
@@ -331,9 +306,5 @@ Grid.Column="1" Grid.RowSpan="5" Stretch="UniformToFill" Margin="0 18  0 55"  />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
-
-
-
     </Grid>
 </Page>
