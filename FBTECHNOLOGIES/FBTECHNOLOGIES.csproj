@@ -58,6 +58,12 @@
     <Compile Include="Converters\PositionToMarginConverter.cs" />
     <Compile Include="ImmobilizeOption.cs" />
     <Compile Include="ViewModels\HomePageDashboardViewModel.cs" />
+    <Compile Include="Views\Dialogs\DTCOffDialog.xaml.cs">
+      <DependentUpon>DTCOffDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\OriginalFileDialog.xaml.cs">
+      <DependentUpon>OriginalFileDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
@@ -124,6 +130,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Dialogs\DTCOffDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dialogs\OriginalFileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\AboutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

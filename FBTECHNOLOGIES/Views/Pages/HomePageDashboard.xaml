@@ -149,7 +149,11 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
         <!--Bottm Btns-->
 
         <Grid Grid.Row="7" Grid.Column="1">
-            <Image Source="images/SaveShape.png" Margin="0 -14 0 0"
+            <Button Width="200" Height="60">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Image Source="../../images/SaveShape.png" Margin="0 -18 0 0"
 		   Stretch="Uniform"
 		   HorizontalAlignment="Center"
 		   VerticalAlignment="Center" />
@@ -160,9 +164,13 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
 			   Foreground="Black"
 			   VerticalAlignment="Center"
 			   HorizontalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Grid>
         <Grid Grid.Row="7" Grid.Column="0">
-            <Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>  
                 <ColumnDefinition Width="70*"/>
                 <!-- 60% of the width -->
                 <ColumnDefinition Width="30*"/>
@@ -170,7 +178,11 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
             </Grid.ColumnDefinitions>
             <!-- Right Column (40%) -->
             <Grid Grid.Column="1"  VerticalAlignment="Center">
-                <Image Source="images/OriginalFile.png" 
+                <Button Width="120" Height="50" Click="OriginalFileBtn_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Image Source="../../images/OriginalFile.png" 
 			   Stretch="Uniform"
 			   Margin="0 0 8 0"
 			   VerticalAlignment="Center" />
@@ -180,6 +192,10 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
 				   Foreground="#606060"
 				   VerticalAlignment="Center"
 				   HorizontalAlignment="Center" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
         </Grid>
         <Grid Grid.Row="7" Grid.Column="3">
@@ -191,21 +207,32 @@ Grid.ColumnSpan="3" Margin="20 0 20 0 " Stretch="Fill"  />
             </Grid.ColumnDefinitions>
             <!-- Right Column (40%) -->
             <Grid Grid.Column="0"  VerticalAlignment="Center">
-                <Image Source="images/DTCOFF.png" 
-   Stretch="Uniform"
-   Margin="8 0 0 0"
-   VerticalAlignment="Center" />
-                <TextBlock Text="DTC OFF"
-	   FontSize="16"
-	   FontWeight="Bold"
-	   Foreground="#0E172E"
-	   VerticalAlignment="Center"
-	   HorizontalAlignment="Center" />
+                <Button Width="120" Height="50" Click="DTCOffBtn_Click" >
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Image Source="../../images/DTCOFF.png" 
+                       Stretch="Uniform"
+                       VerticalAlignment="Center"/>
+                                <TextBlock Text="DTC OFF"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="#0E172E"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
         </Grid>
         <!--Open btn-->
         <Grid Grid.Row="0" Grid.Column="1">
-            <Image Source="images/OpenBtn.png" Margin="0 0 0 -16"
+            <Button Width="120" Height="50">
+                <Button.Template> 
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Image Source="../../images/OpenBtn.png" Margin="0 0 0 -16"
 Stretch="Uniform"
 HorizontalAlignment="Center"
 VerticalAlignment="Center" />
@@ -216,6 +243,10 @@ VerticalAlignment="Center" />
 	Foreground="White"
 	VerticalAlignment="Center"
 	HorizontalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button> 
         </Grid>
 
         <!--Token-->
